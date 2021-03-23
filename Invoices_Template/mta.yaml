@@ -1,20 +1,20 @@
 _schema-version: "3.2"
-ID: Inv_Curso
+ID: Invoices
 version: 0.0.1
 modules:
-- name: inv-curso-approuter
+- name: invoices-approuter
   type: approuter.nodejs
-  path: inv-curso-approuter
+  path: invoices-approuter
   requires:
-  - name: Inv_Curso_html_repo_runtime
+  - name: Invoices_html_repo_runtime
   parameters:
     disk-quota: 256M
     memory: 256M
-- name: Inv_Curso_ui_deployer
+- name: Invoices_ui_deployer
   type: com.sap.application.content
   path: .
   requires:
-  - name: Inv_Curso_html_repo_host
+  - name: Invoices_html_repo_host
     parameters:
       content-target: true
   build-parameters:
@@ -33,12 +33,12 @@ modules:
     - npm run build
     supported-platforms: []
 resources:
-- name: Inv_Curso_html_repo_runtime
+- name: Invoices_html_repo_runtime
   type: org.cloudfoundry.managed-service
   parameters:
     service: html5-apps-repo
     service-plan: app-runtime
-- name: Inv_Curso_html_repo_host
+- name: Invoices_html_repo_host
   type: org.cloudfoundry.managed-service
   parameters:
     service: html5-apps-repo
