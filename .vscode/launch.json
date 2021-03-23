@@ -18,28 +18,8 @@
         "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
         "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/Invoices/SAPUI5\"}"
       },
-      "envFile": "${workspaceFolder}/Invoices/SAPUI5/.env3",
+      "envFile": "${workspaceFolder}/Invoices/SAPUI5/.env9",
       "preLaunchTask": "Build Invoices"
-    },
-    {
-      "name": "Run Inv_Curso-SAPUI5",
-      "type": "node",
-      "request": "launch",
-      "program": "${workspaceFolder}/Inv_Curso/inv-curso-approuter/node_modules/@sap/html5-repo-mock/index.js",
-      "args": [
-        "--standalone",
-        "/logaligroupSAPUI5/index.html",
-        "--ui5",
-        "{\"version\":\".\"}"
-      ],
-      "cwd": "${workspaceFolder}/Inv_Curso/SAPUI5",
-      "env": {
-        "PORT": "6004",
-        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
-        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/Inv_Curso/SAPUI5\"}"
-      },
-      "envFile": "${workspaceFolder}/Inv_Curso/SAPUI5/.env4",
-      "preLaunchTask": "Build Inv_Curso"
     }
   ]
 }
