@@ -1,5 +1,5 @@
 _schema-version: '3.2'
-ID: Inv_Curso
+ID: Invoices
 version: 0.0.1
 modules:
   - name: invoices-approuter
