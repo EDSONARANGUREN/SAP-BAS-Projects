@@ -5,11 +5,7 @@
             headerText="{i18n>invoiceListTitle}"
             class="sapUIResponsiveMargin"
             width="auto"
-<<<<<<< HEAD
             items="{    path : 'northwind>/Invoices',
-=======
-            items="{    path : 'invoices>/Invoices',
->>>>>>> 5c6e3e86041cb7a45218ef2873e13be973ff9354
                         sorter : [  {   path : 'ShipperName',
                                         group : true},
                                     {   path : 'ProductName'}]}">
@@ -21,34 +17,20 @@
             </Toolbar>
         </headerToolbar>
         <items>
-<<<<<<< HEAD
             <ObjectListItem title="{northwind>Quantity} x {northwind>ProductName}"
                             number="{ parts : [ {path: 'northwind>ExtendedPrice'},
-=======
-            <ObjectListItem title="{invoices>Quantity} x {invoices>ProductName}"
-                            number="{ parts : [ {path: 'invoices>ExtendedPrice'},
->>>>>>> 5c6e3e86041cb7a45218ef2873e13be973ff9354
                                                 {path: 'currency>/usd'}],
                                       type: 'sap.ui.model.type.Currency',
                                       formatOptions: {
                                           showMeasure : false
                                       }}"
                             numberUnit="{currency>/usd}"
-<<<<<<< HEAD
                             numberState="{= ${northwind>ExtendedPrice} > 1000 ? 'Success' : ${northwind>ExtendedPrice} > 500 ? 'None' : 'Error'}">
                 <!--firstStatus>
                     <ObjectStatus text="{   path: 'northwind>Status',
                                             formatter: '.formatter.invoiceStatus' }">
                     </ObjectStatus>
                 </firstStatus-->
-=======
-                            numberState="{= ${invoices>ExtendedPrice} > 50 ? 'Success' : ${invoices>ExtendedPrice} > 7 ? 'None' : 'Error'}">
-                <firstStatus>
-                    <ObjectStatus text="{   path: 'invoices>Status',
-                                            formatter: '.formatter.invoiceStatus' }">
-                    </ObjectStatus>
-                </firstStatus>
->>>>>>> 5c6e3e86041cb7a45218ef2873e13be973ff9354
             </ObjectListItem>
         </items>
     </List>
