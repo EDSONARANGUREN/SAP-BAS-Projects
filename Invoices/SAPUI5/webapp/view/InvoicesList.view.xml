@@ -25,12 +25,9 @@
                                           showMeasure : false
                                       }}"
                             numberUnit="{currency>/usd}"
-                            numberState="{= ${northwind>ExtendedPrice} > 1000 ? 'Success' : ${northwind>ExtendedPrice} > 500 ? 'None' : 'Error'}">
-                <!--firstStatus>
-                    <ObjectStatus text="{   path: 'northwind>Status',
-                                            formatter: '.formatter.invoiceStatus' }">
-                    </ObjectStatus>
-                </firstStatus-->
+                            numberState="{= ${northwind>ExtendedPrice} > 1000 ? 'Success' : ${northwind>ExtendedPrice} > 500 ? 'None' : 'Error'}"
+                            type="Navigation"
+                            press="navigateToDetails">
             </ObjectListItem>
         </items>
     </List>
